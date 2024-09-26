@@ -15,4 +15,9 @@ function addTask() {
     li.onclick = function () {
         li.classList.toggle('completed');
     };
+    li.appendChild(removeButton);
+    taskList.appendChild(li);
+
+
+
 }
