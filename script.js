@@ -5,9 +5,9 @@ function addTask() {
     if (!taskInput.value.trim()) {
         return alert("Todo can't be empty!")
     }
-    
+
     var li = document.createElement('li');
-            li.textContent = taskInput.value;
+    li.textContent = taskInput.value;
 
     var removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
@@ -24,4 +24,4 @@ function addTask() {
 
     taskInput.value = '';
 
-}
+};
