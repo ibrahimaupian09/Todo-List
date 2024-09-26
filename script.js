@@ -18,6 +18,6 @@ function addTask() {
     li.appendChild(removeButton);
     taskList.appendChild(li);
 
-
+    taskInput.value = '';
 
 }
