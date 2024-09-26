@@ -2,6 +2,10 @@ function addTask() {
     var taskInput = document.getElementById('taskInput');
     var taskList = document.getElementById('taskList');
 
+    if (!taskInput.value.trim()) {
+        return alert("Todo can't be empty!")
+    }
+    
     var li = document.createElement('li');
             li.textContent = taskInput.value;
 
